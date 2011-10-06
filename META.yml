@@ -1,0 +1,37 @@
+---
+abstract: 'Convert Strings to English Program Identifiers'
+author:
+  - 'Rafael Kitover, C<< <rkitover@cpan.org> >>'
+  - 'Rafael Kitover <rkitover@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.92
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.02'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: String-ToIdentifier-EN
+no_index:
+  directory:
+    - inc
+    - t
+provides:
+  String::ToIdentifier::EN:
+    file: lib/String/ToIdentifier/EN.pm
+    version: 0.01
+  String::ToIdentifier::EN::Unicode:
+    file: lib/String/ToIdentifier/EN/Unicode.pm
+requires:
+  Exporter: 5.57
+  Lingua::EN::Inflect::Phrase: 0.04
+  Text::Unidecode: 0.04
+  namespace::clean: 0.20
+  perl: 5.8.1
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/rkitover/string-toidentifier-en.git
+version: 0.01
