@@ -15,7 +15,7 @@ String::ToIdentifier::EN - Convert Strings to English Program Identifiers
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -138,13 +138,10 @@ sub to_identifier {
     return __PACKAGE__->string_to_identifier(@_);
 }
 
-# override some pluralizations Lingua::EN::Inflect::Phrase gets wrong
+# Override some pluralizations Lingua::EN::Inflect::Phrase gets wrong here, if
+# needed.
 sub _pluralize_phrase {
     my ($self, $phrase) = @_;
-
-    if ($phrase =~ /brace\z/) {
-        return "${phrase}s";
-    }
 
     return to_PL($phrase);
 }
@@ -284,6 +281,10 @@ rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=String-ToIdentifier-EN>.  I
 will be notified, and then you'll automatically be notified of progress on your
 bug as I make changes.
+
+=head1 REPOSITORY
+
+L<http://github.com/rkitover/string-toidentifier-en>
 
 =head1 SUPPORT
 
