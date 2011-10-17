@@ -19,3 +19,5 @@ META.yml
 README
 t/00_basic.t
 t/10_ascii.t
+t/20_capitalization.t
+t/lib/TestString.pm
