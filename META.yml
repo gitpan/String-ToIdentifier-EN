@@ -22,7 +22,7 @@ no_index:
 provides:
   String::ToIdentifier::EN:
     file: lib/String/ToIdentifier/EN.pm
-    version: 0.04
+    version: 0.05
   String::ToIdentifier::EN::Unicode:
     file: lib/String/ToIdentifier/EN/Unicode.pm
 requires:
@@ -34,4 +34,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/string-toidentifier-en.git
-version: 0.04
+version: 0.05
