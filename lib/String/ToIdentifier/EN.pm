@@ -15,7 +15,7 @@ String::ToIdentifier::EN - Convert Strings to English Program Identifiers
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 SYNOPSIS
 
@@ -128,6 +128,9 @@ our %ASCII_MAP = (
     0x7E => ['tilde'],
     0x7F => ['delete', 'char'],
 );
+
+# fixup for perl <= 5.8.3
+$ASCII_MAP{0} = ['null'];
 
 =head2 to_identifier
 
