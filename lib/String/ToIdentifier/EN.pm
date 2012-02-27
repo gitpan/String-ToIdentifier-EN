@@ -15,7 +15,7 @@ String::ToIdentifier::EN - Convert Strings to English Program Identifiers
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 SYNOPSIS
 
@@ -29,6 +29,12 @@ our $VERSION = '0.06';
     to_identifier "foo\x00bar";          # fooNullCharBar
     to_identifier "foo\x00\x00bar";      # foo2NullCharsBar
     to_identifier "foo\x00\x00bar", '_'; # foo_2_null_chars_bar
+
+    {
+        no utf8;
+        to_identifier "foo\xFF\xFFbar.baz";      # foo_2_0xFF_BarDotBaz
+        to_identifier "foo\xFF\xFFbar.baz", '_'; # foo_2_0xFF_bar_dot_baz
+    }
 
 =head1 DESCRIPTION
 
@@ -265,7 +271,7 @@ sub string_to_identifier {
         }
         else {
             # For single char replacements we want to match the case.
-            if (substr($str, $pos, 1) =~ /^[[:upper:]]\z/) {
+            if (substr($str, $pos, 1) =~ /^\p{Lu}\z/) {
                 $replacement_phrase = ucfirst $replacement_phrase;
             }
             else {
