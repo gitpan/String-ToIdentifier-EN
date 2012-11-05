@@ -23,16 +23,16 @@ no_index:
 provides:
   String::ToIdentifier::EN:
     file: lib/String/ToIdentifier/EN.pm
-    version: 0.08
+    version: 0.09
   String::ToIdentifier::EN::Unicode:
     file: lib/String/ToIdentifier/EN/Unicode.pm
 requires:
   Exporter: 5.57
-  Lingua::EN::Inflect::Phrase: 0.14
+  Lingua::EN::Inflect::Phrase: 0.16
   Text::Unidecode: 0.04
   namespace::clean: 0.20
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/string-toidentifier-en.git
-version: 0.08
+version: 0.09
