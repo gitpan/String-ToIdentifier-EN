@@ -1,4 +1,10 @@
 package String::ToIdentifier::EN;
+BEGIN {
+  $String::ToIdentifier::EN::AUTHORITY = 'cpan:RKITOVER';
+}
+{
+  $String::ToIdentifier::EN::VERSION = '0.10';
+}
 
 use 5.008001;
 use strict;
@@ -12,10 +18,6 @@ use Exporter 'import';
 =head1 NAME
 
 String::ToIdentifier::EN - Convert Strings to English Program Identifiers
-
-=cut
-
-our $VERSION = '0.09';
 
 =head1 SYNOPSIS
 

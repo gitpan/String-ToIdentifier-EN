@@ -1,16 +1,16 @@
 ---
 abstract: 'Convert Strings to English Program Identifiers'
 author:
-  - 'Rafael Kitover, C<< <rkitover@cpan.org> >>'
   - 'Rafael Kitover <rkitover@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.59
-  Test::More: 0.92
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+  utf8: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.59
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,21 +18,21 @@ meta-spec:
 name: String-ToIdentifier-EN
 no_index:
   directory:
-    - inc
     - t
-provides:
-  String::ToIdentifier::EN:
-    file: lib/String/ToIdentifier/EN.pm
-    version: 0.09
-  String::ToIdentifier::EN::Unicode:
-    file: lib/String/ToIdentifier/EN/Unicode.pm
 requires:
-  Exporter: 5.57
-  Lingua::EN::Inflect::Phrase: 0.16
-  Text::Unidecode: 0.04
-  namespace::clean: 0.20
-  perl: 5.8.1
+  Exporter: 0
+  Lingua::EN::Inflect::Phrase: 0
+  Text::Unidecode: 0
+  Unicode::UCD: 0
+  base: 0
+  namespace::clean: 0
+  perl: 5.008001
+  strict: 0
+  warnings: 0
 resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=String-ToIdentifier-EN
+  homepage: http://metacpan.org/release/String-ToIdentifier-EN
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/string-toidentifier-en.git
-version: 0.09
+version: 0.10
+x_authority: cpan:RKITOVER

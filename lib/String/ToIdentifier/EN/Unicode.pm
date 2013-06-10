@@ -1,9 +1,17 @@
 package String::ToIdentifier::EN::Unicode;
+BEGIN {
+  $String::ToIdentifier::EN::Unicode::AUTHORITY = 'cpan:RKITOVER';
+}
+{
+  $String::ToIdentifier::EN::Unicode::VERSION = '0.10';
+}
 
 use strict;
 use warnings;
 use base 'String::ToIdentifier::EN';
 use Exporter 'import';
+
+=encoding UTF-8
 
 =head1 NAME
 

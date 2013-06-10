@@ -1,4 +1,8 @@
-Revision history for String-ToIdentifier-EN
+Revision history for String::ToIdentifier::EN
+
+0.10 2013-06-10 00:22:12
+    - convert to dzil
+    - add =encoding UTF-8 to ::Unicode POD (RT#85981)
 
 0.09  2012-11-05 02:47:53
     - bump up Lingua::EN::Inflect::Phrase dep to 0.16 (latest) due to unescaped
