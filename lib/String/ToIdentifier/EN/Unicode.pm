@@ -3,7 +3,7 @@ BEGIN {
   $String::ToIdentifier::EN::Unicode::AUTHORITY = 'cpan:RKITOVER';
 }
 {
-  $String::ToIdentifier::EN::Unicode::VERSION = '0.10';
+  $String::ToIdentifier::EN::Unicode::VERSION = '0.11';
 }
 
 use strict;
@@ -74,7 +74,7 @@ L<http://github.com/rkitover/string-toidentifier-en>
 
 =head1 SUPPORT
 
-More information on this module is availableat:
+More information on this module is available at:
 
 =over 4
 
